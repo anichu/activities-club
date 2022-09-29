@@ -1,9 +1,21 @@
 import React, { useEffect, useState } from "react";
 import anis from "../../images/anis molla.jpg";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./right.css";
 
 const Right = ({ activitiesTime }) => {
 	const [breakTime, setBreakTime] = useState(0);
+	const notify = () =>
+		toast.success("Congratulations! You have done your activity.", {
+			position: "top-center",
+			autoClose: 5000,
+			hideProgressBar: false,
+			closeOnClick: true,
+			pauseOnHover: true,
+			draggable: true,
+			progress: undefined,
+		});
 
 	useEffect(() => {
 		let breakTimeFromStorage = localStorage.getItem("break-time");
@@ -63,7 +75,20 @@ const Right = ({ activitiesTime }) => {
 			<div className="activities-details">
 				<h3 className="activities-time">Activities time: {activitiesTime}m</h3>
 				<h3 className="activities-time">Break time: {breakTime}m</h3>
-				<button className="activity-button">Activity Completed</button>
+				<button className="activity-button" onClick={notify}>
+					Activity Completed
+				</button>
+				<ToastContainer
+					position="top-center"
+					autoClose={5000}
+					hideProgressBar={false}
+					newestOnTop={false}
+					closeOnClick
+					rtl={false}
+					pauseOnFocusLoss
+					draggable
+					pauseOnHover
+				/>
 			</div>
 		</div>
 	);
