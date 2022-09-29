@@ -1,0 +1,9 @@
+.left-side-container {
+	width: calc(100% - 300px);
+	padding: 20px;
+}
+
+.left-side-header {
+	font-size: 30px;
+	margin-left: 10px;
+}
