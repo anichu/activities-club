@@ -5,7 +5,7 @@
 	text-align: center;
 	padding-top: 10px;
 	background-color: #40407a;
-	height: 100vh;
+	height: 90vh;
 }
 
 .profile img {
@@ -72,7 +72,6 @@
 	transition: 0.5s;
 	outline: none;
 	font-weight: bold;
-	position: relative;
 }
 .activity-button:hover {
 	background-color: blue;
@@ -83,6 +82,7 @@
 @media only screen and (max-width: 600px) {
 	.right-side-container {
 		width: 90%;
+		position: relative;
 		border-radius: 10px;
 		margin: auto;
 	}

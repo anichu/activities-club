@@ -3,6 +3,7 @@
 }
 .card-section {
 	display: flex;
+	position: relative;
 }
 .main {
 	margin: 10px 0px;
