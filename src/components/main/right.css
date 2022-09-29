@@ -72,9 +72,18 @@
 	transition: 0.5s;
 	outline: none;
 	font-weight: bold;
+	position: relative;
 }
 .activity-button:hover {
 	background-color: blue;
 	border-color: blue;
 	color: white;
+}
+
+@media only screen and (max-width: 600px) {
+	.right-side-container {
+		width: 90%;
+		border-radius: 10px;
+		margin: auto;
+	}
 }
