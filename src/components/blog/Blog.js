@@ -38,6 +38,21 @@ const Blog = () => {
 						manipulation.
 					</p>
 				</div>
+				<div className="blog">
+					<h1>What are the differences between props and state ?</h1>
+					<p>
+						{" "}
+						<strong>Props: </strong> Props are known as properties it can be
+						used to pass data from one component to another. Props cannot be
+						modified, read-only, and Immutable.{" "}
+					</p>
+					<p>
+						<strong>State: </strong>
+						The state represents parts of an Application that can change. Each
+						component can have its State. The state is Mutable and It is local
+						to the component only.
+					</p>
+				</div>
 			</div>
 		</div>
 	);
