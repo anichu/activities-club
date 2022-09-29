@@ -1,9 +1,9 @@
 import { useState } from "react";
-import "./App.css";
 import Blog from "./components/blog/Blog";
 import Header from "./components/header/Header";
 import Left from "./components/main/Left";
 import Right from "./components/main/Right";
+import "./App.css";
 
 function App() {
 	const [activitiesTime, setActivitiesTime] = useState(0);

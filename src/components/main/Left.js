@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import Cards from "../card/Cards";
 import "./left.css";
 
