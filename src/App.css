@@ -1,6 +1,13 @@
 .container {
 	width: 100%;
 }
-.main {
+.card-section {
 	display: flex;
+}
+.main {
+	margin: 10px 0px;
+}
+
+.blog-section {
+	margin: 20px;
 }
