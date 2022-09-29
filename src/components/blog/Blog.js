@@ -53,6 +53,24 @@ const Blog = () => {
 						to the component only.
 					</p>
 				</div>
+				<div className="blog">
+					<h1>Describes the useEffect works except fetch data loaded.</h1>
+
+					<p>
+						1. The useEffect Hook allows you to perform side effects in your
+						components.
+					</p>
+					<p>2. It helps to directly updating the DOM </p>
+					<p>
+						3. useEffect runs on every render. That means that when the count
+						changes, a render happens, which then triggers another effect.
+					</p>
+					<p>4. It helps to reduce memory leaks by using clean up function.</p>
+					<p>
+						5. You can run useEffect whenever state is changed. It helps to
+						update state
+					</p>
+				</div>
 			</div>
 		</div>
 	);
